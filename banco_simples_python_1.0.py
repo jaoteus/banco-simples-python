@@ -29,7 +29,7 @@ loop_login = True
 loop_principal = True
 
 #Funções necessárias:
-def menu_principal():
+def menu_principal(): #--> o mesmo do Menu
     print('1 - Dados da conta')
     print('2 - Depósito na conta corrente')
     print('3 - Saque na conta corrente')
@@ -100,7 +100,7 @@ def saque_cp():
         valor = 0.0
     else:
         print('')
-
+#Aba de login
 while loop_login:
     email_ou_cpf = str(input('Digite seu e-mail ou CPF: '))
     senha = str(input('Digite sua senha: '))
@@ -119,7 +119,7 @@ while loop_login:
 
     else:
         print('')
-
+#Menu
 while loop_principal:
     menu_principal()
     opcao_menu = input('Digite: ')
