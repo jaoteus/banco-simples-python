@@ -7,14 +7,14 @@ Meu perfil no GitHub: https://github.com/jaoteus
 LEIA:
     Esta não é uma versão final, vocês poderão encontrar erros.
     Conforme eu vá adquirindo conhecimentos, irei estar sempre atualizando o código.
-    Portanto, se encontar algum erro, me avise, estarei agradecendo :)
+    Portanto, se encontrar algum erro, me avise, estarei agradecendo :)
 '''
 #Variáveis necessárias
 saldo_cc = 0.0
 saldo_cp = 0.0
 valor = 0.0 #--> usado para fazer depósito e saque
-nome_titular = 'Advogado José David Gil Rodrigues'
-senha = 'alunoete123' # --> por enquanto irá ficar fixa, apenas para teste.
+nome_titular = 'João'
+senha = 'jao0011' # --> por enquanto irá ficar fixa, apenas para teste.
 cpf = '00000000011'
 numero_conta_corrente = '1234-1' #--> por enquanto irá ficar fixa, apenas para teste.
 numero_conta_poupanca = '1234-2' #--> por enquanto irá ficar fixa, apenas para teste.
@@ -22,7 +22,7 @@ agencia = '2332-9' #--> por enquanto irá ficar fixa, apenas para teste.
 endereco = 'Rua Seilá, n°00, Recife, Pernambuco.' #--> por enquanto irá ficar fixa, apenas para teste.
 numero = '+55 00 0000-0000' #--> por enquanto irá ficar fixa, apenas para teste.
 opcao_menu = ''
-email = 'alunoete123@gmail.com' #--> por enquanto irá ficar fixa, apenas para teste.
+email = 'jao0011@gmail.com' #--> por enquanto irá ficar fixa, apenas para teste.
 
 #loops:
 loop_login = True
@@ -102,6 +102,8 @@ def saque_cp():
         print('Saldo insuficiente!')
         valor = 0.0
     elif valor <= saldo_cp:
+        saldo_cp = saldo_cp - valor
+        saldo_cc = saldo_cc + valor
         print('Saque realizado com sucesso!')
         valor = 0.0
     else:
