@@ -109,7 +109,7 @@ def saque_cp():
     else:
         print('')
 
-# 'Loop' para o usuário permanecer tentando fazer 'login' caso o mesmo não consiga e quando
+# 'Loop' para o usuario permanecer tentando fazer 'login' caso o mesmo não consiga e quando
 # conseguir, o loop irá acabar e iremos direciona-lo para o menu.
 while loop_login:
     # Entrada de dados do usuário
